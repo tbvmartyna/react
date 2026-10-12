@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css"/>
+</head>
+<body>
+ 
+  <body> 
+
+ <header> 
+
+
+
+ <h1>Sklep </h1> 
+
+ <nav> 
+
+
+
+  <a href="#start">Start</a> 
+
+  <a href="#oferta">Oferta</a> 
+
+  <a href="#kontakt">Kontakt</a> 
+
+ </nav> 
+
+ </header> 
+ 
+
+</body>
+</html>
+
+
+
+
+//styl css
+nav{
+    background-color: #34495e;
+    color: white;
+    text-align:right;
+          
+}
+
+a{
+   
+    
+    color: white;
+}
+
+a:hover{
+      color:#1abc9c;
+      
+}
