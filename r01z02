@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css"/>
+</head>
+<body>
+   <table>
+   
+    <thead>
+        <tr>
+        <th>Usługa</th>
+        <th>Cena</th>
+        <th>Czas realizacji</th>   
+    </tr>
+    </thead>
+  
+   <tbody>
+    
+    <tr>
+       <th> Farbowanie włosów</th>
+       <th> 65.00 </th>
+       <th> 1h</th>
+    </tr>
+   </tbody>
+   </table>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+//styl css
+
+thead {
+    background-color: #2c3e50;
+    color: white;
+}
+td, th {
+    border:2px #001320;
+}
