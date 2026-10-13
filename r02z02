@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+     
+
+<body>
+   <script>
+              const obliczPoleProstokata = (szerokosc, wysokosc) => szerokosc * wysokosc;
+
+              const wynik = obliczPoleProstokata(5, 8);
+
+             console.log(`Pole prostokąta o wymiarach 5 x 8 wynosi ${wynik}`);
+
+    </script>
+</body>
+
+</html>
