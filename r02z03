@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
 
+    
+<body>
+
+    <script>
+   const celsjuszNaFahrenheit = (c) => c * 9 / 5 + 32;
+    const opiszPogode = (c) => {
+            if (c < 0) {
+                return "mróz";
+            } else if (c >= 0 && c <= 15) {
+                return "chłodno";
+            } else if (c > 15 && c <= 25) {
+                return "ciepło";
+            } else {
+                return "upał";
+            }
+        };
+
+      
+        const temperaturaC = 20;
+        const temperaturaF = celsjuszNaFahrenheit(temperaturaC);
+        const opis = opiszPogode(temperaturaC);
+
+       console.log(`Dla temperatury ${temperaturaC}°C (${temperaturaF.toFixed(1)}°F) jest ${opis}.`);
+   
+    </script>
+    
+</body>
+
+</html>
