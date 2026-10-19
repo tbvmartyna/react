@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #licznik {
+      color: black;
+      transition: color 0.3s;
+    }
+    #licznik.czerwony {
+      color: #e74c3c;
+    }
+  </style>
+</head>
+
+    <body>
+        <textarea id="wiadomosc" maxlength="100"></textarea>
+        <p id="licznik">Pozostalo znakow: 100</p>
+
+  <script>
+    const wiadomosc = document.getElementById('wiadomosc');
+    const licznik = document.getElementById('licznik');
+    const limit = 100;
+
+    wiadomosc.addEventListener('input', () => {
+      const pozostalo = limit - wiadomosc.value.length;
+      licznik.textContent = `Pozostalo znakow: ${pozostalo}`;
+
+      if (pozostalo < 10) {
+        licznik.classList.add('czerwony');
+      } else {
+        licznik.classList.remove('czerwony');
+      }
+    });
+  </script>
+</body>
+
+
+
+</html>
