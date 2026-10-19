@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+    
+<body>
+
+    <script>
+           const zamowienia = [ 
+
+            { produkt: "Klawiatura", cena: 129, ilosc: 2 }, 
+
+            { produkt: "Monitor", cena: 899, ilosc: 1 }, 
+
+            { produkt: "Myszka", cena: 79, ilosc: 3 }, 
+
+        ];
+
+
+        const wartosciPozycji = zamowienia.map(({ produkt, cena, ilosc }) => ({
+        produkt,
+        wartoscPozycji: cena * ilosc
+        }));
+
+
+        const lacznaWartosc = zamowienia.reduce((suma, { cena, ilosc }) => suma + cena * ilosc, 0);
+
+        const monitor = zamowienia.find(({ produkt }) => produkt === "Monitor");
+
+        if (monitor) {
+        console.log("Cena Monitora:", monitor.cena);
+        }
+
+        console.log("Wartosci pozycji:", wartosciPozycji);
+        console.log("Laczna wartosc zamowienia:", lacznaWartosc);
+   
+    </script>
+    
+</body>
+
+</html>
