@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+    .czerwony {
+      color: #e74c3c;
+    }
+    </style>
+</head>
+
+    
+<body>
+ <p id="tekst">To jest przykladowy tekst.</p>
+  <button id="przelacznik">Zmien kolor</button>
+
+  <script>
+    const przelacznik = document.getElementById('przelacznik');
+    const tekst = document.getElementById('tekst');
+
+    przelacznik.addEventListener('click', () => {
+      tekst.classList.toggle('czerwony');
+    });
+  </script>
+   
+    
+</body>
+
+</html>
